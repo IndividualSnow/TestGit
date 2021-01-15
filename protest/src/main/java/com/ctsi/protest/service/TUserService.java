@@ -6,6 +6,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class TUserService {
 
+    public TUser saveUser() {
+        return new TUser(1, 1, "张三", 23, 0);
+    }
+
     public TUser getUser() {
         return new TUser(1, 1, "张三", 23, 1);
     }
