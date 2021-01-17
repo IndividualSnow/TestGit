@@ -9,6 +9,7 @@ public interface TUserMapper {
 
     @Select("SELECT * FROM t_user WHERE user_id = #{user_id}")
     TUser getUser(Integer user_id);
+    int a = 0;
 
     TUser saveTUser();
 }
